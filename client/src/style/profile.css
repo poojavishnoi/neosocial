@@ -1,0 +1,190 @@
+.profile_main_container{
+  margin: 1% 17%;
+  padding: 1% 5%;
+  display: flex;
+}
+
+.profile_main_container .profile_image{
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+  padding:1rem;
+  border-radius: 50%;
+}
+
+.profile_post:last-child {
+  margin-bottom: 6rem;
+}
+
+.profile_details{
+  width: 80%;
+  margin: 0 1rem;
+  text-align: left;
+  padding: 2% 1%;  
+}
+
+.profile_username{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.profile_username button{
+  margin: 0 0.5rem 0 1rem;
+  font-size: 1rem;
+  height: min-content;
+  border: none;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+}
+
+.follow_details{
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.follow_details p{
+  margin-right: 1rem;
+}
+
+.profile_desc{
+  padding: 0;
+}
+
+.flw_btn{
+  border: none;
+  color: white;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  min-width: 7rem;
+  background-color: #ff7474;
+}
+
+.profile_posts{
+  min-height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1% 18.8%;
+  padding: 2rem;
+}
+
+.profile_post{
+  margin: 1rem;
+  max-width: 20rem;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  aspect-ratio: 3/4;
+  min-height: 10%;
+  object-fit: cover;
+}
+
+
+.profile_caption{
+  color: gray;
+}
+
+@media only screen and (max-width: 1300px) {
+  .profile_post:last-child {
+    margin-bottom: 6rem;
+  }
+
+  .profile_main_container{
+    margin: 1% 10%;
+    padding: 1%;
+    align-items: center;
+  }
+
+  .profile_posts{
+    margin: 1% 10%;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  .profile_posts{
+    margin: 1% 1%;
+  }
+
+  .profile_main_container .profile_image{
+    height: 13rem;
+    width: 13rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .profile_main_container{
+    margin: 1% 2%;
+  }
+
+  .profile_posts{
+    margin: 1% 1%;
+  }
+  .profile_post{
+    max-width: 40%;
+  }
+
+  .profile_main_container .profile_image{
+    height: 11rem;
+    width: 11rem;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .profile_container{
+    font-size: 0.7rem;
+  }
+
+  .profile_post:last-child {
+    margin-bottom: 6rem;
+  }
+
+  .profile_main_container{
+    margin: 1%;
+    padding: 1%;
+    align-items: center;
+  }
+
+  .profile_main_container .profile_image{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+  }
+
+  .profile_posts{
+    margin: 1%;
+    padding: 0;
+    width: fit-content;
+  }
+
+  .profile_post{
+    margin: 0.5rem;
+    max-width: 45%;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .profile_username button{
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+    padding: 0.3rem;
+  }
+
+  .profile_username{
+    margin-bottom:0.3rem;
+  }
+
+  .flw_btn{
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem; 
+    margin-bottom: 0.5rem;
+  }
+
+  .follow_details{
+    margin-bottom: 0.3rem;
+  }
+
+}

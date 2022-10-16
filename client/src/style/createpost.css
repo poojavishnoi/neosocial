@@ -1,0 +1,76 @@
+.createpost_container {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: rgb(242, 242, 242);
+}
+
+.createpost_main_container {
+  width: 50rem;
+  height: 10rem;
+  margin: 1rem 30%;
+  padding: 5% 0;
+}
+
+.createpost_main_container input[type="text"] {
+  width: 72%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.post_image_upload {
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.post_image_upload input {
+  margin-left: 1rem;
+}
+
+.createpost_container button{
+  padding: 0.5rem 0.7rem;
+  background-color: #ff7474;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .createpost_main_container {
+    width: 100%;
+    margin: 0rem;
+    padding: 1rem;
+  }
+
+  .createpost_main_container input[type="text"] {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+    padding: 0.5rem;
+  }
+
+  .createpost_container button{
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+
+  .post_image_upload {
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+  }
+  
+  .post_image_upload span{
+    display: none;
+  }
+
+  .post_image_upload input {
+    margin: 0;
+  }
+}
+

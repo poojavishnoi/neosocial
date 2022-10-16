@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b480a9ab.css",
+    "main.js": "/static/js/main.dd16386a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/register.svg": "/static/media/register.f12e21d258b17ab844bb063ebc4ab348.svg",
+    "index.html": "/index.html",
+    "main.b480a9ab.css.map": "/static/css/main.b480a9ab.css.map",
+    "main.dd16386a.js.map": "/static/js/main.dd16386a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b480a9ab.css",
+    "static/js/main.dd16386a.js"
+  ]
+}
