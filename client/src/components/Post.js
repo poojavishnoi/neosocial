@@ -20,6 +20,12 @@ function Post({
   const [updatedLikes, setUpdatedLikes] = useState(likes);
   const [newComment, setNewComment] = useState("");
   const [updatedComment, setUpdatedComment] = useState(comments);
+  const [showComments, setShowComments] = useState(false);
+
+  const showCommentHandler = () => {
+    setShowComments(!showComments);
+  }
+  
   const navigate = useNavigate();
 
   const likePost = (id) => {
@@ -176,6 +182,12 @@ function Post({
               })}
 
             </div>
+            {
+              updatedComment.length > 1 ?
+              <button onClick={showCommentHandler} className='comment_btn'>
+              Load more comments
+              </button> :<></>
+            }
           </div>
 
           <div className="post_comment">
