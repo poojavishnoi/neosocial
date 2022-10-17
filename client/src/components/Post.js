@@ -185,7 +185,7 @@ function Post({
             {
               updatedComment.length > 1 ?
               <button onClick={showCommentHandler} className='comment_btn'>
-              Load more comments
+                {showComments ? "Load more comments" : "Hide comments"}
               </button> :<></>
             }
           </div>
