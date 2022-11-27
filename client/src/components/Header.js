@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { CgAddR, CgProfile } from "react-icons/cg";
-import { BsSearch, BsImage } from "react-icons/bs";
+import { BsImage } from "react-icons/bs";
 import "../style/header.css";
 import { useAuth } from "../context/auth-context";
 function Header() {
@@ -75,16 +75,7 @@ function Header() {
         </Link>
         NEOSOCIAL
       </div>
-      <div className="header_search">
-        <span>
-          <BsSearch />
-        </span>
-        <input
-          className="header_searchbar"
-          type="text"
-          placeholder="Search for Friends, Creators, etc"
-        />
-      </div>
+     
       <div className="header_links">
         <ul>{renderList()}</ul>
       </div>
