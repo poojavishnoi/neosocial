@@ -46,15 +46,17 @@ img{
   border-bottom: 1px solid lightgray;
 }
 
+.caption_profile_name{
+  color: rgb(40, 40, 40)
+}
+
 .comment_section{
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  display: none;
 }
 
 .comment_section_full{
   display: block;
+  /* color: rgb(103, 103, 103); */
 }
 
 .no_select {
@@ -84,10 +86,9 @@ img{
 }
 
 .comment_btn{
-  padding: 0.3rem 0.7rem;
+  padding: 0.5rem;
   border: none;
-  margin: 0.5rem 0;
-  border-radius: 0.5rem;
+  margin: 0.5rem -0.1rem;
   background-color: rgb(241, 241, 241);
 }
 

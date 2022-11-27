@@ -161,9 +161,8 @@ function Post({
           </div>
 
           <div className="post_content">
-            <span>{updatedLikes.length} likes</span>
-            <br />
-            {caption}
+            <p>{updatedLikes.length} likes</p>
+            <p><b className="caption_profile_name">{name}</b> {caption}</p>
             <div className={showComments ? "comment_section_full" : "comment_section"}>
               {updatedComment.map((item) => {
                 return (
@@ -182,10 +181,11 @@ function Post({
               })}
 
             </div>
+            
             {
-              updatedComment.length > 1 ?
+              updatedComment.length > 0 ?
             <button onClick={showCommentHandler} className='comment_btn'>
-            {showComments ? "Hide Comments" : "Load more comments"}
+            {showComments ? "Hide Comments" : `load ${updatedComment.length} comments`}
             </button> :<></>
             }
           </div>
