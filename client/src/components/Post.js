@@ -21,13 +21,13 @@ function Post({
   const [newComment, setNewComment] = useState("");
   const [updatedComment, setUpdatedComment] = useState(comments);
   const [showComments, setShowComments] = useState(false);
-  const navigate = useNavigate();
 
   const showCommentHandler = () => {
     setShowComments(!showComments);
   }
+  
+  const navigate = useNavigate();
 
-  console.log(comments);
   const likePost = (id) => {
     fetch("https://neosocial-app.herokuapp.com/api/posts/like", {
       method: "put",
@@ -183,10 +183,12 @@ function Post({
             </div>
             
             {
+
               updatedComment.length > 0 ?
             <button onClick={showCommentHandler} className='comment_btn'>
             {showComments ? "Hide Comments" : `load ${updatedComment.length} comments`}
             </button> :<></>
+            
             }
           </div>
 
