@@ -40,7 +40,7 @@ function Landing() {
   }, [image,navigate, user, url]);
 
   const uploadData = () => {
-    fetch("https://neosocial-app.herokuapp.com/api/user/register", {
+    fetch("https://neosocial-backend.onrender.com/api/user/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

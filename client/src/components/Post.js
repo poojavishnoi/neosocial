@@ -29,7 +29,7 @@ function Post({
   const navigate = useNavigate();
 
   const likePost = (id) => {
-    fetch("https://neosocial-app.herokuapp.com/api/posts/like", {
+    fetch("https://neosocial-backend.onrender.com/api/posts/like", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -45,7 +45,7 @@ function Post({
   };
 
   const unlikePost = (id) => {
-    fetch("https://neosocial-app.herokuapp.com/api/posts/unlike", {
+    fetch("https://neosocial-backend.onrender.com/api/posts/unlike", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -61,7 +61,7 @@ function Post({
   };
 
   const makeComment = (text, postId) => {
-    fetch("https://neosocial-app.herokuapp.com/api/posts/comment", {
+    fetch("https://neosocial-backend.onrender.com/api/posts/comment", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -81,7 +81,7 @@ function Post({
 
   const deletePost = (postId) => {
     fetch(
-      `https://neosocial-app.herokuapp.com/api/posts/deletepost/${postId}`,
+      `https://neosocial-backend.onrender.com/api/posts/deletepost/${postId}`,
       {
         method: "delete",
         headers: {

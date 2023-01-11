@@ -12,7 +12,7 @@ function Home() {
 
   useEffect(()=>{
     try{
-      fetch("https://neosocial-app.herokuapp.com/api/user/getalluser", {
+      fetch("https://neosocial-backend.onrender.com/api/user/getalluser", {
         method: "get",
         headers: {
           "auth-token": localStorage.getItem("jwt"),
@@ -29,7 +29,7 @@ function Home() {
 
   useEffect(() => {
     try{
-    fetch("https://neosocial-app.herokuapp.com/api/posts/allpost", {
+    fetch("https://neosocial-backend.onrender.com/api/posts/allpost", {
       method: "get",
       headers: {
         "auth-token": localStorage.getItem("jwt"),

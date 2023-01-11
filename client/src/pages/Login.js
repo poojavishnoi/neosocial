@@ -22,7 +22,7 @@ function Login() {
       type:"INIT_AUTH"
     })
 
-    fetch("https://neosocial-app.herokuapp.com/api/user/login", {
+    fetch("https://neosocial-backend.onrender.com/api/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -14,7 +14,7 @@ function Follow({ followUser }) {
 
   const followUserHandler = (id) => {
     console.log(id);
-    fetch("https://neosocial-app.herokuapp.com/api/user/follow", {
+    fetch("https://neosocial-backend.onrender.com/api/user/follow", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ function Follow({ followUser }) {
   };
 
   const unFollowUserHandler = (id) => {
-    fetch("https://neosocial-app.herokuapp.com/api/user/unfollow", {
+    fetch("https://neosocial-backend.onrender.com/api/user/unfollow", {
       method: "put",
       headers: {
         "Content-Type": "application/json",

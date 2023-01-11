@@ -6,7 +6,7 @@ function SubscribedUserPost() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    fetch("https://neosocial-app.herokuapp.com/api/posts/getsubpost", {
+    fetch("https://neosocial-backend.onrender.com/api/posts/getsubpost", {
       method:"get",
       headers:{
         "auth-token": localStorage.getItem("jwt")

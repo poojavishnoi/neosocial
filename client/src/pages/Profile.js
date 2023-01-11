@@ -11,7 +11,7 @@ function Profile() {
   const [image, setImage] = useState("")
 
   useEffect(() => {
-    fetch("https://neosocial-app.herokuapp.com/api/posts/mypost", {
+    fetch("https://neosocial-backend.onrender.com/api/posts/mypost", {
       method:"get",
       headers:{
         "auth-token": localStorage.getItem("jwt")
@@ -36,7 +36,7 @@ function Profile() {
       .then((res) => res.json())
       .then((data) => {
 
-        fetch("https://neosocial-app.herokuapp.com/api/user/updatepic", {
+        fetch("https://neosocial-backend.onrender.com/api/user/updatepic", {
           method:"put",
           headers: {
             "Content-Type": "application/json",
